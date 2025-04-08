@@ -18,13 +18,13 @@ class ListaComprasView extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.sort_by_alpha),
             onPressed: () {
-              ctrl.itens.sort((a, b) => a.nome.compareTo(b.nome));
+              ctrl.ordenarPorNome();
             },
           ),
           IconButton(
             icon: Icon(Icons.star),
             onPressed: () {
-              ctrl.itens.sort((a, b) => b.score.compareTo(a.score));              
+              ctrl.ordenarPorScore();              
             },
           ),
           IconButton(
