@@ -97,9 +97,8 @@ class ListaComprasView extends StatelessWidget {
                         ),
                         TextButton(
                           onPressed: () {
-                            ctrl.itens.removeAt(index);
+                            ctrl.removerPorIndex(index); 
                             Navigator.pop(context);
-
                             ScaffoldMessenger.of(context).showSnackBar(
                               SnackBar(content: Text('Item removido com sucesso!')),
                             );

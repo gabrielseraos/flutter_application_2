@@ -38,5 +38,9 @@ class ListaController extends ChangeNotifier {
     _itens.sort((a, b) => b.score.compareTo(a.score));
     notifyListeners();
   }
+  void removerPorIndex(int index) {
+    _itens.removeAt(index);
+    notifyListeners();
+  }
 
 }
