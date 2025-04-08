@@ -23,13 +23,18 @@ class _HomeViewState extends State<HomeView> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Login')),
-      body: Padding(
+      body: Padding(    
         padding: const EdgeInsets.all(30),
         child: Form(
-          key: _formKey,
+          key: _formKey,       
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              Image.asset(
+                'assets/images/logo.png',
+                width: 150, // ou ajuste como preferir
+              ),
+              SizedBox(height: 20),
               Text('Bem-vindo!', style: TextStyle(fontSize: 22)),
               SizedBox(height: 30),
               TextFormField(
@@ -90,6 +95,7 @@ class _HomeViewState extends State<HomeView> {
           ),
         ),
       ),
+      
     );
   }
 }
