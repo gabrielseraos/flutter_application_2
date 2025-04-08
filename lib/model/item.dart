@@ -2,7 +2,7 @@ class Item {
   String nome;
   int quantidade;
   String categoria;
-  int score; // <--- este campo precisa existir
+  int score;
   Item({
     required this.nome,
     required this.quantidade, 

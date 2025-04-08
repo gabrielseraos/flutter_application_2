@@ -12,7 +12,7 @@ class CadastroView extends StatefulWidget {
 
 class _CadastroViewState extends State<CadastroView> {
   final ctrl = GetIt.I.get<CadastroController>();
-  final _formKey = GlobalKey<FormState>(); // ⬅️ Adicionado
+  final _formKey = GlobalKey<FormState>();
 
   @override
   void initState() {
@@ -26,7 +26,7 @@ class _CadastroViewState extends State<CadastroView> {
       appBar: AppBar(title: Text('App')),
       body: Padding(
         padding: EdgeInsets.all(30),
-        child: Form( // ⬅️ Form adicionado aqui
+        child: Form(
           key: _formKey,
           child: Column(
             children: [

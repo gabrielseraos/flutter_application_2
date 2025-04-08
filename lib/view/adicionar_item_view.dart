@@ -15,7 +15,7 @@ class _AdicionarItemViewState extends State<AdicionarItemView> {
 
   final nomeCtrl = TextEditingController();
   final qtdCtrl = TextEditingController();
-  final scoreCtrl = TextEditingController(); // Novo controller para o score
+  final scoreCtrl = TextEditingController();
 
   String categoria = 'Alimentos';
 

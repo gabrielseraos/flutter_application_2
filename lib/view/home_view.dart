@@ -32,7 +32,7 @@ class _HomeViewState extends State<HomeView> {
             children: [
               Image.asset(
                 'assets/images/logo.png',
-                width: 150, // ou ajuste como preferir
+                width: 150,
               ),
               SizedBox(height: 20),
               Text('Bem-vindo!', style: TextStyle(fontSize: 22)),

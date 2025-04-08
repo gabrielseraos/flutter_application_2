@@ -7,7 +7,6 @@ class LoginController extends ChangeNotifier {
   String? erro;
 
   bool validarLogin() {
-    // Email e senha fixos
     if (txtEmail.text == 'teste@teste.com' && txtSenha.text == '123456') {
       erro = null;
       return true;
