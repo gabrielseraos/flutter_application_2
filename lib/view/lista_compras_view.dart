@@ -19,14 +19,12 @@ class ListaComprasView extends StatelessWidget {
             icon: Icon(Icons.sort_by_alpha),
             onPressed: () {
               ctrl.itens.sort((a, b) => a.nome.compareTo(b.nome));
-              ctrl.notifyListeners();
             },
           ),
           IconButton(
             icon: Icon(Icons.star),
             onPressed: () {
-              ctrl.itens.sort((a, b) => b.score.compareTo(a.score));
-              ctrl.notifyListeners();
+              ctrl.itens.sort((a, b) => b.score.compareTo(a.score));              
             },
           ),
           IconButton(
@@ -100,7 +98,6 @@ class ListaComprasView extends StatelessWidget {
                         TextButton(
                           onPressed: () {
                             ctrl.itens.removeAt(index);
-                            ctrl.notifyListeners();
                             Navigator.pop(context);
 
                             ScaffoldMessenger.of(context).showSnackBar(

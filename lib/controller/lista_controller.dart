@@ -28,5 +28,15 @@ class ListaController extends ChangeNotifier {
   void atualizarItem(int index, Item novoItem) {
   itens[index] = novoItem;
   notifyListeners();
-}
+  }
+  void ordenarPorNome() {
+    _itens.sort((a, b) => a.nome.compareTo(b.nome));
+    notifyListeners();
+  }
+
+  void ordenarPorScore() {
+    _itens.sort((a, b) => b.score.compareTo(a.score));
+    notifyListeners();
+  }
+
 }
